@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import cn from 'classnames';
 import { createUseStyles } from 'react-jss';
-import ShopBasketModal from '../../pages/shop/components/ShopBasketModal';
+import ShopLikedProductsModal from '../../pages/shop/components/ShopLikedProductsModal';
 import { useShop } from '../../state/ShopContext';
 import Button from '../Button';
 import Container from '../layout/Container';
@@ -57,7 +57,7 @@ const PageHeader = () => {
                             <span className={classes.buttonText}>{` ${likedProducts.length}`}</span>
                         </Button>
                     </div>
-                    {modalOpen && <ShopBasketModal top={modalTopPosition} />}
+                    {modalOpen && <ShopLikedProductsModal top={modalTopPosition} />}
                 </div>
             </Container>
         </header>

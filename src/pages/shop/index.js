@@ -1,7 +1,14 @@
 import Page from '../../components/page/Page';
+import ShopFilters from './components/ShopFilters';
+import ShopProducts from './components/ShopProducts';
 
 const Shop = () => {
-    return <Page>I am the shop page</Page>;
+    return (
+        <Page>
+            <ShopFilters />
+            <ShopProducts />
+        </Page>
+    );
 };
 
 export default Shop;

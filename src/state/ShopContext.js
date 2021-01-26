@@ -15,7 +15,7 @@ const fetchProducts = async () => {
     return data;
 };
 
-const ShopContext = createContext({
+export const ShopContext = createContext({
     loading: false,
     likeProduct: () => {},
     unlikeProduct: () => {},

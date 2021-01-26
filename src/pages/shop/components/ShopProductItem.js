@@ -67,7 +67,7 @@ const useStyles = createUseStyles((theme) => ({
 const ShopProductItem = (props) => {
     const classes = useStyles();
     const { liked, handleLike, product } = props;
-    const { name, brand, price, img, sold } = product;
+    const { name, brand, price, sold } = product;
 
     return (
         <div className={cn({ 'product-list-item': true, 'product-list-item-sold': sold })}>
